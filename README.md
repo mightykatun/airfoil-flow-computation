@@ -1,8 +1,6 @@
 # Airfoil-Flow-Model
 Computes aerodynamical coefficients related to the flow around an airfoil.
 
-Computes Cp, Cl, and Cdplus adds a visual representation ov velocity streamlines.
+Computes Cp (Coefficient of pressure), Cl (lift), and Cd (drag) plus adds a visual representation of velocity streamlines.
 
-Based on https://github.com/jte0419/Panel_Methods adds amongst other things an imbedded NACA geometry gen.
-
-Do not distribute.
+Based on: https://github.com/jte0419/Panel_Methods, adding amongst other things an imbedded NACA geometry generator and updated xfoil running script.
