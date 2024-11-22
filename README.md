@@ -8,6 +8,8 @@ Welcome to the Airfoil Flow Analysis project repository! This software computes 
 - **Integration with XFoil**: Seamless integration with XFoil for enhanced accuracy and validation.
 - **Streamline Visualization**: Generates graphical representations of flow streamlines for intuitive analysis.
 
+![](Aerodynamic_Computing_System/plots/plot_2412.png)
+
 ### Wind Tunnel Integration:
 To complement the software's accuracy, a small-scale wind tunnel has been constructed. This setup includes:
 - **Test Section Specifications**: 0.3m x 0.3m with a 9:1 contraction ratio.
