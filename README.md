@@ -20,6 +20,5 @@ For more details on the wind tunnel design and integration, visit [ldak.dev/proj
 Continued efforts are focused on:
 - **Enhancing Computational Efficiency**: Optimizing code for faster calculations and expanded modeling capabilities.
 - **Improving Accuracy**: Refining algorithms for more precise aerodynamic predictions across various airfoil shapes.
-- **Open Source Community**: Welcoming contributions to advance the project’s capabilities and usability.
 
 Feel free to explore and contribute!
