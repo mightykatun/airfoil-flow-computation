@@ -1,4 +1,5 @@
 import os
+import sys
 from imports import var
 import numpy as np
 
@@ -37,7 +38,12 @@ def xfoil(param):
     temp.write("\n")
     temp.write("QUIT\n")
     temp.close()
-    os.system("xfoil.exe < xfoil/temp.inp > xfoil/temp.out")
+    ## run xfoil
+    if 'linux' in sys.platform:
+        os.system("wine xfoil.exe < xfoil/temp.inp > xfoil/temp.out")
+    elif 'win' in sys.platform:
+        os.system("xfoil.exe < xfoil/temp.inp > xfoil/temp.out")
+    ##
     data_cp = np.loadtxt(airfoil_cp, skiprows=3)
     x_cp = data_cp[:,0]
     y_cp = data_cp[:,1]
