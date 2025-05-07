@@ -27,13 +27,13 @@ All the required configuration is found in `config.txt`:
 
 ```yaml
 # foil computation
-naca_foil: 4412			# 4-digit NACA complient code
+naca_foil: 4412          # 4-digit NACA complient code
 angle_of_attack: 0
-panel_number: 500		# number of panels used for approximation
-v_infinity: 1			# air velocity
+panel_number: 500        # number of panels used for approximation
+v_infinity: 1            # air velocity
 grid_size_x: 150
 grid_size_y: 150
-streamline_comp: True	# set to False to skip expensive and slow streamline computation
+streamline_comp: True    # set to False to skip expensive and slow streamline computation
 
 # show plot options (they will be saved either way)
 foilgen_plot: False
@@ -44,6 +44,7 @@ streamline_plot: False
 
 # xfoil args
 xfoil_run: True
+
 # default values (no need to change them unless you know what you're doing)
 panel_bunching: 4
 te/le_density: 1
