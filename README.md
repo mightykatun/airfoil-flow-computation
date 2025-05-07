@@ -21,7 +21,7 @@ To complement the software's accuracy, a small-scale wind tunnel has been constr
 For more details on the wind tunnel design and integration, visit [ldak.dev/projects/wind-tunnel](https://ldak.dev/projects/wind-tunnel).
 
 ### Usage
-*Note that to run on Linux, you need to have Wine installed (see `xfoil.py`)*
+*Note that to run on Linux, you need to have `wine` installed (see `xfoil.py`)*
 
 All the required configuration is found in `config.txt`:
 
