@@ -20,6 +20,37 @@ To complement the software's accuracy, a small-scale wind tunnel has been constr
 
 For more details on the wind tunnel design and integration, visit [ldak.dev/projects/wind-tunnel](https://ldak.dev/projects/wind-tunnel).
 
+### Usage
+*Note that to run on Linux, you need to have Wine installed (see `xfoil.py`)*
+
+All the required configuration is found in `config.txt`:
+
+```yaml
+#foil computation
+naca_foil: 4412
+angle_of_attack: 0
+panel_number: 500
+v_infinity: 1
+grid_size_x: 150
+grid_size_y: 150
+streamline_comp: True
+
+#show plot options (they will be saved either way)
+foilgen_plot: False
+panel_plot: False
+cp_plot: False
+cp_comparaison: False
+streamline_plot: False
+
+#xfoil args
+xfoil_run: True
+panel_bunching: 4
+te/le_density: 1
+panel_density: 1
+top_y/c_lim: 1 1
+bottom_y/c_lim: 1 1
+```
+
 ### Future Developments:
 Continued efforts are focused on:
 - **Enhancing Computational Efficiency**: Optimizing code for faster calculations and expanded modeling capabilities.
