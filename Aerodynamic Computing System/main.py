@@ -28,7 +28,7 @@ param = var("naca", "str")
 vinf = var("v_infinity", "float")
 resolution = var("panel_number", "int")
 if resolution > 500:
-    print("Panel number should be smaller than 500.")
+    print("Panel number should be smaller than 500, beware of float errors.")
     #exit(1)
 
 #generate foil file with config.txt params
@@ -74,7 +74,7 @@ def theta(t):
 #generate naca coordinates
 
 print(f"Generating naca {param}...")
-if p == 0:
+if p == 0: # symmetrical airfoil
     for i in range(resolution):
         t = (i / resolution)**1.5
         xupper.append(t)
@@ -83,7 +83,7 @@ if p == 0:
         ylower.append(-xy(t))
         meanx.append(t)
         meany.append(0)
-else:
+else: # non-symmetrical airfoil
     for i in range(resolution):
         t = (i / resolution)**(1.5 + 0.25 * (1 / p))
         xu = t - xy(t) * np.sin(theta(t))

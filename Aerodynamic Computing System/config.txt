@@ -1,21 +1,21 @@
 #foil computation
 naca_foil: 4412
 angle_of_attack: 0
-panel_number: 500
+panel_number: 750
 v_infinity: 1
 grid_size_x: 150
 grid_size_y: 150
-streamline_comp: True
+streamline_comp: False
 
 #show plot options (they will be saved either way)
-foilgen_plot: False
-panel_plot: False
-cp_plot: False
-cp_comparaison: False
+foilgen_plot: True
+panel_plot: True
+cp_plot: True
+cp_comparaison: True
 streamline_plot: False
 
 #xfoil args
-xfoil_run: True
+xfoil_run: False
 panel_bunching: 4
 te/le_density: 1
 panel_density: 1
