@@ -5,16 +5,18 @@ import numpy as np
 
 def xfoil(param):
     param = str(param)
+
     airfoil_save = "xfoil/" + param + ".txt"
     airfoil_cp = "xfoil/cp_" + param + ".txt"
     airfoil_pol = "xfoil/pol_" + param + ".txt"
-    if os.path.exists(airfoil_save):
-        os.remove(airfoil_save)
-    if os.path.exists(airfoil_cp):
-        os.remove(airfoil_cp)
-    if os.path.exists(airfoil_pol):
-        os.remove(airfoil_pol)
+    for i in [airfoil_save, airfoil_cp, airfoil_pol]:
+        if os.path.exists(i):
+            os.remove(i)
+    # generate config file
     temp = open('xfoil/temp.inp', "w")
+    temp.write("PLOP\n")
+    temp.write("G F\n")
+    temp.write("\n")
     temp.write(f"LOAD foils/naca_{param}.dat" + "\n")
     temp.write("PPAR\n")
     temp.write("N " + var("panel_number", "str") + "\n")
@@ -38,12 +40,14 @@ def xfoil(param):
     temp.write("\n")
     temp.write("QUIT\n")
     temp.close()
+
     ## run xfoil
     if 'linux' in sys.platform:
         os.system("wine xfoil.exe < xfoil/temp.inp > xfoil/temp.out")
     elif 'win' in sys.platform:
         os.system("xfoil.exe < xfoil/temp.inp > xfoil/temp.out")
     ##
+
     data_cp = np.loadtxt(airfoil_cp, skiprows=3)
     x_cp = data_cp[:,0]
     y_cp = data_cp[:,1]
