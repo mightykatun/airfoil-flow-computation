@@ -1,0 +1,20 @@
+===== Parameters =====
+NACA: 6412
+AoA: 0
+Panel number: 500
+V infinity: 1
+
+===== Lift Coefficient =====
+Code: 0.91992
+XFoil: 0.76010
+
+===== Moment Coefficient =====
+Code: -0.27042
+XFoil: -0.16190
+
+===== Drag Coefficient =====
+Code: -0.03304
+XFoil: 0.00000
+
+===== Circulation =====
+Gamma: 1.48896

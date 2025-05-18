@@ -1,0 +1,23 @@
+[foil computation]
+naca_foil = 4412
+angle_of_attack = 0
+panel_number = 500
+v_infinity = 1
+grid_size_x = 150
+grid_size_y = 150
+streamline_comp = false
+
+[plot options]
+foilgen_plot = true
+panel_plot = true
+cp_plot = true
+cp_comparaison = true
+streamline_plot = true
+
+[xfoil]
+xfoil_run = true
+panel_bunching = 4
+te-le_density = 1
+panel_density = 1
+top_y-c_lim = 1 1
+bottom_y-c_lim = 1 1
