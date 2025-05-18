@@ -3,7 +3,7 @@ import sys
 from imports import var
 import numpy as np
 
-def xfoil(param):
+def xfoil(param:int):
     param = str(param)
 
     airfoil_save = "xfoil/" + param + ".txt"
