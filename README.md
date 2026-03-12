@@ -18,7 +18,7 @@ To complement the software's accuracy, a small-scale wind tunnel has been constr
 - **Measurement Capabilities**: Arduino-based system for real-time data logging of lift, drag, and Cp polars.
 - **Experimental Validation**: Validates software predictions against empirical data with a high degree of correlation (within 15% error margin).
 
-For more details on the wind tunnel design and integration, visit [ldak.dev/projects/wind-tunnel](https://ldak.dev/projects/wind-tunnel).
+For more details on the wind tunnel design and integration, visit [ldak.dev/projects/wind-tunnel/wind-tunnel](https://ldak.dev/projects/wind-tunnel/wind-tunnel).
 
 ### Usage
 *Note that to run on Linux, you need to have `wine` installed (see `xfoil.py`)*
